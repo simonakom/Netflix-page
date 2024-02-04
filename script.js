@@ -29,12 +29,29 @@ function toggleAdditionalInfo() {
     }
 }
 
-const signInModal = document.getElementById("signInModal");
-const signInButton = document.getElementById("signInButton");
 
-// Function to show the modal
+// modal window functions
+const signInButton = document.getElementById("signInButton");
+const signInModal = document.getElementById("signInModal");
+const closeButton = document.getElementById("closeButton");
+
 function showSignInModal() {
     signInModal.showModal();
+    document.body.classList.add('dialog-opened');
 }
-
 signInButton.addEventListener("click", showSignInModal);
+function closeSignInModal() {
+    signInModal.close();
+    document.body.classList.remove('dialog-opened');
+}
+closeButton.addEventListener("click", closeSignInModal);
+
+
+// Close modal when "Escape" key is pressed
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        closeSignInModal();
+    }
+});
+
+
