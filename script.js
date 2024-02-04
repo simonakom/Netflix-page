@@ -1,3 +1,4 @@
+// accordion
 const accordion = document.querySelectorAll (".accordion")
 
 for (let i = 0; i < accordion.length; i++) {
@@ -13,3 +14,27 @@ for (let i = 0; i < accordion.length; i++) {
         }
     })
 }
+
+// "learn more" expandable
+function toggleAdditionalInfo() {
+    const learnMoreInfo = document.getElementById("learnMoreInfo");
+    const additionalInfo = document.getElementById("additionalInfo");
+
+    if (additionalInfo.style.display === "none") {
+        additionalInfo.style.display = "block";
+        learnMoreInfo.style.display = "none";
+    } else {
+        additionalInfo.style.display = "none";
+        learnMoreInfo.style.display = "inline"; 
+    }
+}
+
+const signInModal = document.getElementById("signInModal");
+const signInButton = document.getElementById("signInButton");
+
+// Function to show the modal
+function showSignInModal() {
+    signInModal.showModal();
+}
+
+signInButton.addEventListener("click", showSignInModal);

@@ -26,11 +26,44 @@
                     <li><a class="dropdown-item" href="#">Español</a></li>
                     <li><a class="dropdown-item active" href="#">English</a></li>
                 </ul>
-                <li class="button rounded-1">Sign In</li>
+                <li class="button rounded-1" id="signInButton">Sign In</li>
             </div>
         </div>
     </div>
 </div>
+    <!-- Modal window -->
+<dialog id="signInModal">
+    <div>
+        <h3>Sign In</h3>
+        <form action="" class="signInputs">
+            <input class="emailInput rounded-2 form-control form-floating" type="email" placeholder="Email or phone number" required>
+            <input class="passwordInput rounded-2 form-control form-floating" type="password" placeholder="Password" required>
+            <button type="submit" class="btn btn-secondary signButton">Sign In</button>
+        </form>
+        <div class="passwordLink"><a href="https://www.netflix.com/lt/LoginHelp">Forgot password?</a></div>
+
+        <div class="signFooter">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked >
+                <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+            </div>
+
+            <div class="newToNetflix">New to Netflix? <a href="https://www.netflix.com/es-en/">Sign up now.</a></div>
+
+            <div class="protectionInfo" id="protectionInfo">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                <span id="learnMoreInfo" onclick="toggleAdditionalInfo()">Learn more.</span>
+                <div id="additionalInfo" style="display: none;">
+                    The information collected by Google reCAPTCHA is subject to the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/privacy">Terms of Service</a>,
+                    and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes
+                    (it is not used for personalized advertising by Google).
+                </div>
+            </div>
+    </div>
+</dialog>
+
+  
+
     <!-- main -->
     <div class="main">
         <div class="area">

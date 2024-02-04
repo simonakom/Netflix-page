@@ -806,14 +806,165 @@ font-size: 16px;
   
   
   
+  /* Modal Window */
+
+  #signInModal {
+    /* margin: 0 auto; */
+    margin-top: 92px;
+    padding: 48px 65px;
+    min-height: 708px;
+    max-width: 450px;
+    z-index: 1000;
+    
+    background-color: #000000c7;
+    color: white;
+    border: none;
+    border-radius: 3px;
+  }
+  #signInModal h3{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .emailInput{
+    color: rgb(255, 255, 255);
+    background-color: #2423236e;
+    border: 1px solid rgba(132, 128, 128, 0.688);
+    min-height: 56px;
+    width: 100%;
+    margin-top: 28px;
+  }
+  .emailInput:focus{
+    color: rgb(255, 255, 255);
+    background-color: #2423236e;
+    border: 2px solid white;
+    box-shadow: none !important;
+  }
+
+  .passwordInput{
+    color: rgb(255, 255, 255);
+    background-color: #2423236e;
+    border: 1px solid rgba(132, 128, 128, 0.688);
+    min-height: 56px;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .passwordInput:focus{
+    color: rgb(255, 255, 255);
+    background-color: #2423236e;
+    border: 2px solid white;
+    box-shadow: none !important;
+  }
+  .signInputs ::placeholder{
+    color: #919292;
+    padding-left: 3px;
+  }
+  .signButton{
+    background-color: #e50815;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .signButton:hover {
+    background-color: #a91118;
+  }
+  .passwordLink{
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+  }
+  .passwordLink a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+
+
+.signFooter {
+  margin-top: 108px;
+}
+.form-check-input {
+  background-color: black !important; 
+  border-color: rgba(128, 128, 128, 0.56); 
+  width: 19px;
+  height: 19px;
+  border-radius: 3px !important;
+}
+.form-check-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: rgba(128, 128, 128, 0.56); 
+}
+.form-check-input:hover {
+  border: 1px solid rgba(255, 255, 255, 0.938); 
+  transition: border 0.4s ease-out;
+  cursor: pointer;
+}
+input.form-check-input:checked[type="checkbox"] {
+  background-color: #9fa39e !important;
+  border: none;
+}
+input.form-check-input:checked[type="checkbox"]:hover {
+  background-color: #6f726e !important;
+  border: none;
+}
+.form-check label{
+  margin-top: 2px;
+  margin-left: 7px;
+  font-weight: 400;
+}
+.newToNetflix{
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.61);
+  margin-top: 15px;
+}
+.newToNetflix a{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.newToNetflix a:hover{
+  text-decoration: underline;
+}
+
+
+.protectionInfo {
+  margin-top: 10px;
+  font-size: 13px;
+  color: grey;
+  line-height: 16px;
+}
+.protectionInfo span {
+  cursor: pointer;
+  font-size: 13px;
+  color: #0b67d7;
+}
+#additionalInfo {
+  margin-top: 13px;
+  font-size: 13px;
+  color: grey;
+  line-height: 16px;
+}
+#additionalInfo a {
+  color: #3a79ef;
+  text-decoration: none;
+}
+
+
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
   
