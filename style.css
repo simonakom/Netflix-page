@@ -9,6 +9,7 @@ body {
     min-width: 70%;
     padding: 3px 6%;
     margin-top: -20px;
+    overflow-x: hidden;
   }
   .logo img {
     width: 180px;
@@ -78,6 +79,7 @@ body {
     background-image: linear-gradient(rgb(0, 0, 0)10%, rgba(1, 1, 1, 0.454) 40%, rgba(0, 0, 0, 0.8) 100%), url('./pictures/background.jpg') ;
     background-size: cover;
     background-position: center center;
+    overflow-x: scroll;
   }
   .area {
     color: white;
@@ -470,6 +472,7 @@ font-size: 16px;
   align-items: center;
   color: white;
   overflow: scroll;
+  width: 100%;
 }
 .faq-container h1 {
   font-size: 3rem;
@@ -486,7 +489,6 @@ font-size: 16px;
   align-items: center;
   padding: 20px 30px 10px 20px;
   border: 1px solid black;
-  margin-bottom: -9px;
 }
 .accordion:hover {
   background-color: #414141;
@@ -503,7 +505,7 @@ font-size: 16px;
 }
 .faq-container .description {
   width: 77%;
-  max-height: 0;
+  max-height: 0px;
   overflow: scroll;
   transition: max-height 0.3s ease;
   text-align: justify;
@@ -511,6 +513,9 @@ font-size: 16px;
   font-size: 23px;
   padding: 0 20px; 
   line-height: 30px;
+}
+p.description {
+  margin-bottom: 7px ;
 }
 .membership {
   font-size: 20px;
@@ -576,19 +581,20 @@ font-size: 16px;
   background-color: black;
   margin-top: 8px;
   padding: 0px 11%;
+  overflow-y: scroll;
 }
 .questions {
   padding-top: 4%;
-  padding-bottom: 2%;
+  padding-bottom:1%;
 }
 .questions a {
   color: #b3b3b3;
 }
 .footer-container {
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .list li {
-  margin: 10px 0px;
+  margin: 10px -30px;
   list-style-type: none;
 }
 .list li a {
@@ -598,6 +604,7 @@ font-size: 16px;
   cursor: pointer;
 }
 .dropdown-footer button {
+  margin-top: 10px;
   height: 32px;
   padding: 0 14px;
 }
@@ -655,13 +662,15 @@ font-size: 16px;
   fill: #a91118;
 }
 #signInModal {
-  padding: 48px 65px;
-  max-width: 420px;
+  padding: 48px 54px; 
+  max-width: 90%; 
+  width: 420px ;
   background-color: #000000b4;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow-y: scroll;
+  min-height: 700px;
 }
 #signInModal h3{
   font-size: 2rem;
