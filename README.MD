@@ -1,6 +1,7 @@
+# <span><img src="./pictures/icon-netflix.webp" alt=netflix style="height: 1em; vertical-align: middle;"></span> "Netflix" landing page
 
-# Netflix Page
-
-This assignment is about recreating responsive "Netflix" page using bootstrap/html/css/javascript. Goal was to  practice also collapsible content "accordion" (FAQ), modal window (Sing In) and create html site simmilar to  <a href="https://www.netflix.com/es-en/" style="font-size:small;">View</a><h4>
+This assignment is about recreating responsive "Netflix" <a href="https://www.netflix.com/es-en/" style="font-size:small;"> landing page</a> design using javascript/bootstrap/css and practising "hamburger menu" ( press "Sign In" button).
 
 <h4>🔹 Netflix page sample - <a href="https://simonakom.github.io/netflix-page/index.html" style="font-size:small;">View</a><h4>
+
+

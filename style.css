@@ -1,211 +1,158 @@
-
 body {
-    background-color: #0f0f0fe7;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
-  }
-
-  /*--------navbar section---------*/
-  .container {
-    min-width: 70%;
-    padding: 3px 6%;
-    margin-top: -20px;
-    overflow-x: hidden;
-  }
-  .logo img {
-    width: 180px;
-  }
-  .dropdown button {
-    width: fit-content;
-    height: 32px;
-    padding: 0 14px;
-  }
-  .dropdown button,
-  .dropdown button:hover,
-  .dropdown button:active,
-  .dropdown button:focus {
-    border: 1px solid rgb(90, 91, 87);
-    color: white !important;
-    font-weight: 500;
-  }
-  .dropdown-menu {
-    margin: -3px;
-    padding: 2px 0;
-  }
-  .red-button {
-    background-color: #e50815;
-    color: white;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 5px 17px;
-    list-style: none;
-    cursor: pointer;
-  }
-  .red-button:hover {
-    background-color: #a91118;
-  }
-  @media (max-width: 1200px) {
-    .container {
-      max-width: 100%;
-    }
-  }
-  @media (max-width: 780px) {
-    .container {
-      margin-top: 0px;
-    }
-    .navbar li:nth-child(1) {
-      margin-top: -20px;
-    }
-    .dropdown button {
-      font-size: 0;
-    }
-    .dropdown-menu {
-      padding-top: 22px;
-      padding-bottom: 3px;
-    }
-  }
-  @media (max-width: 570px) {
-    .right-buttons {
-      padding: 0 15px;
-    }
-  }
-
-  /*--------main section---------*/
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 900px; 
-    margin-top: -290px;
-    background-image: linear-gradient(rgb(0, 0, 0)10%, rgba(1, 1, 1, 0.454) 40%, rgba(0, 0, 0, 0.8) 100%), url('./pictures/background.jpg') ;
-    background-size: cover;
-    background-position: center center;
-    overflow-x: hidden;
-  }
-  .area {
-    color: white;
-    text-align: center;
-    margin-top: 280px;
-  }
-  .area h1 {
-    width: 100%;
-    font-size: 3rem;
-    font-weight:900;
-    word-spacing: 1px;
-    margin-bottom: 3rem;
-  }
-  .area h3 {
-    margin-top: -30px;
-    font-size: 25px;
-    font-weight:400;
-    margin-bottom: 30px;
-  }
-  .area h4 {
-    font-size: 20px;
-    font-weight: normal;
-  }
-  .email-signup {
-    align-items: center;
-    margin-top: 20px;
-    text-align: center;
-    justify-content: center;
-  }
-  .email-signup input {
-    background-color: rgba(25, 22, 22, 0.809);
-    min-height: 55px;
-    max-width: 365px;
-    border: 1px solid rgba(132, 128, 128, 0.688);
-  }
-  .email-signup input::placeholder {
-    color: rgb(167, 162, 162);
-    padding-left: 3px;
-  }
-  .email-signup input:focus {
-    background-color: rgba(25, 22, 22, 0.809);
-    color: rgb(255, 255, 255);
-    border: 2px solid rgba(250, 250, 250, 0.865);
-  }
-  .email-signup button {
-    background-color: #e50815;
-    color: #fff;
-    cursor: pointer;
-    padding: 8px 20px;
-    border: none;
-    font-size: 25px;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-  .email-signup button:hover {
-    background-color: #a91118;
-  }
-  @media (max-width: 768px) {
-    .area h1 {
-      font-size: 35px;
-    }
-  }
-  @media (max-width: 600px) {
-  .email-signup {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-    }
-  }
-
-  /*--------discount section---------*/
-  .discount-container {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-  }
-  .discount {
-    position: relative;
-    z-index: 1;
-    background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
-    justify-content: center;
-    top: -85px; 
-    padding: 20px; 
-    color: #fff;
-    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
-    width: 90%;
-  }
-  .discount img {
-    width: 50%;
-    margin-left: 42%;
-    margin-top: -7px;
-  }
-   .discount-info {
-    margin-right: 7%;
-    margin-top: 7px;
-  }
-  .discount-info h5 {
-    font-weight: 500;
-  }
-  .discount-info p {
-    font-weight: 400;
-    margin-bottom: 1px;
-  }
-  .discount-info a {
-    color: #3f7bf3;
-    font-weight: 500;
-    padding-bottom: 0px;
-  }
-  .discount-info i {
-    margin-left: 10px;
-    font-size: 20px;
-  }
-  @media (max-width: 620px) {
-    .discount img {
-      display: none; 
-    }
-  }
-  @media (max-width: 375px) {
-    .discount {
-      margin: 70px 10px; 
-    }
-  }
-
-/*--------TV section---------*/
- .black-container {
+  background-color: #0f0f0fe7;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+/*-------------------navbar section-----------------*/
+.container {
+  min-width: 90%;
+  padding: 3px 90px;
+  margin-top: -20px;
+}
+.logo img {
+  width: 180px;
+}
+.dropdown button {
+  width: fit-content;
+  height: 32px;
+  padding: 0 14px;
+}
+.dropdown button,
+.dropdown button:hover,
+.dropdown button:active,
+.dropdown button:focus {
+  border: 1px solid rgb(90, 91, 87);
+  color: white !important;
+  font-weight: 500;
+}
+.dropdown-menu {
+  margin: -3px;
+  padding: 2px 0;
+}
+.red-button {
+  background-color: #e50815;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px 17px;
+  list-style: none;
+  cursor: pointer;
+}
+.red-button:hover {
+  background-color: #a91118;
+}
+/*-------------------main section-----------------*/
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 900px; 
+  margin-top: -290px;
+  background-image: linear-gradient(rgb(0, 0, 0)10%, rgba(1, 1, 1, 0.454) 40%, rgba(0, 0, 0, 0.8) 100%), url('./pictures/background.jpg') ;
+  background-size: cover;
+  background-position: center center;
+  overflow-x: hidden;
+}
+.area {
+  color: white;
+  text-align: center;
+  margin-top: 280px;
+}
+.area h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-weight:900;
+  word-spacing: 1px;
+  margin-bottom: 3rem;
+}
+.area h3 {
+  margin-top: -30px;
+  font-size: 25px;
+  font-weight:400;
+  margin-bottom: 30px;
+}
+.area h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.email-signup {
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.email-signup input {
+  background-color: rgba(25, 22, 22, 0.809);
+  min-height: 55px;
+  max-width: 365px;
+  border: 1px solid rgba(132, 128, 128, 0.688);
+}
+.email-signup input::placeholder {
+  color: rgb(167, 162, 162);
+  padding-left: 3px;
+}
+.email-signup input:focus {
+  background-color: rgba(25, 22, 22, 0.809);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgba(250, 250, 250, 0.865);
+}
+.email-signup button {
+  background-color: #e50815;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 20px;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.email-signup button:hover {
+  background-color: #a91118;
+}
+/*-------------------discount section-----------------*/
+.discount-container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.discount {
+  position: relative;
+  z-index: 1;
+  background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+  justify-content: center;
+  top: -85px; 
+  padding: 20px; 
+  color: #fff;
+  box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+  width: 90%;
+}
+.discount img {
+  width: 50%;
+  margin-left: 42%;
+  margin-top: -7px;
+}
+  .discount-info {
+  margin-right: 7%;
+  margin-top: 7px;
+}
+.discount-info h5 {
+  font-weight: 500;
+}
+.discount-info p {
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+.discount-info a {
+  color: #3f7bf3;
+  font-weight: 500;
+  padding-bottom: 0px;
+}
+.discount-info i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+/*-------------------TV section-----------------*/
+.black-container {
   background-color: black;
   display: flex;
   align-items: center;
@@ -247,37 +194,7 @@ body {
   padding-bottom: 100px;
   overflow:hidden;
 }
-@media (max-width: 1300px) {
-  .black-container {
-    padding: 60px 10px 0px 10px ;
-  }
-}
-@media (max-width: 980px) {
-  .black-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .text {
-    margin-top: 100px;
-    margin-bottom: -90px ;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .text h1 {
-    font-size: 35px;
-  }
-  .text p {
-    font-size: 20px;
-  }
-}
-@media (max-width: 375px) {
-  .text {
-    margin-top: 150px;
-  }
-}
-
-/*--------PC section---------*/
+/*-------------------PC section-----------------*/
  .pc-container {
   margin-top: 8px; 
   background-color: black;
@@ -321,32 +238,7 @@ body {
   margin-top: 15px;
   margin-bottom: 90px;
 }
-@media (max-width: 1300px) {
-  .pc-container {
-    padding: 60px 10px 0px 10px ;
-  }
-}
-@media (max-width: 980px) {
-  .pc-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .pc-text {
-    margin-top: 20px;
-    margin-bottom: -90px ;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .pc-text h1 {
-    font-size: 35px;
-  }
-  .pc-text p {
-    font-size: 20px;
-  }
-}
-
-/*--------kids section---------*/
+/*-------------------kids section-----------------*/
 .kids-container {
   margin-top: 8px; 
   background-color: black;
@@ -371,19 +263,7 @@ body {
   padding-bottom: 100px;
   overflow:hidden;
 }
-@media (max-width: 1300px) {
-  .kids-container {
-    padding: 60px 10px 0px 10px ;
-  }
-}
-@media (max-width: 980px) {
-  .kids-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/*--------download section---------*/
+/*-------------------download section-----------------*/
 .download-container {
   margin-top: 8px; 
   background-color: black;
@@ -413,12 +293,12 @@ body {
   max-width: 60px;
 }
 .download-box .space {
-line-height: 3px;
-margin-right: 25px;
+  line-height: 3px;
+  margin-right: 25px;
 }
 .download-box h1 {
-color: #fff;
-font-size: 16px;
+  color: #fff;
+  font-size: 16px;
 }
 .download-box p {
   color: #0171eb;
@@ -438,32 +318,7 @@ font-size: 16px;
 .download-image img{
   width: 550px;
 }
-@media (max-width: 1300px) {
-  .download-container {
-    padding: 60px 10px 80px 10px ;
-  }
-}
-@media (max-width: 980px) {
-  .download-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .download-text {
-    margin-top: 20px;
-    margin-bottom: -90px ;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .download-text h1 {
-    font-size: 35px;
-  }
-  .download-text p {
-    font-size: 20px;
-  }
-}
-
-/*--------faq section---------*/
+/*-------------------faq section-----------------*/
 .faq-container {
   background-color: black;
   margin-top: 8px; 
@@ -558,25 +413,7 @@ p.description {
 .faq-signup button:hover {
   background-color: #a91118;
 }
-@media (max-width: 650px) {
-  .faq-container h1 {
-    font-size: 2rem;
-  }
-  .faq-signup {
-    flex-direction: column;
-    align-items: center; 
-  }
-  .faq-signup input {
-    max-width: 70%;
-    padding: 12px 20px;
-  }
-  .faq-signup button {
-    max-width: 90%; 
-    margin-top: 10px; 
-  }
-}
-
-/*--------footer section---------*/
+/*-------------------footer section-----------------*/
 .footer {
   background-color: black;
   margin-top: 8px;
@@ -624,13 +461,7 @@ p.description {
   font-size: 14px;
   padding-bottom: 60px;
 }
-@media (max-width: 992px) {
-  .footer-container {
-      flex-direction: column;
-  }
-}
-  
-/*--------Modal Window---------*/
+/*-------------------Modal Window-----------------*/
 .newBackground {
   position: fixed;
   top: 0;
@@ -810,3 +641,230 @@ input.form-check-input:checked[type="checkbox"]:hover {
 #additionalInfo a:hover {
   text-decoration: underline;
 }
+
+
+
+
+@media (max-width: 1300px) {
+  .black-container {
+    padding: 60px 10px 0px 10px ;
+  }
+  .pc-container {
+    padding: 60px 10px 0px 10px ;
+  }
+  .pc-container {
+    padding: 60px 10px 0px 10px ;
+  }
+  .kids-container {
+    padding: 60px 10px 0px 10px ;
+  }
+  .download-container {
+    padding: 60px 10px 80px 10px ;
+  }
+}
+@media (max-width: 1279px) {
+  .container {
+    max-width: 100%;
+    padding: 3px 20px;
+  }
+}
+@media (max-width: 980px) {
+  .black-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    margin-top: 100px;
+    margin-bottom: -90px ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .text h1 {
+    font-size: 35px;
+  }
+  .text p {
+    font-size: 20px;
+  }
+  .pc-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .pc-text {
+    margin-top: 20px;
+    margin-bottom: -90px ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .pc-text h1 {
+    font-size: 35px;
+  }
+  .pc-text p {
+    font-size: 20px;
+  }
+  .pc-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .pc-text {
+    margin-top: 20px;
+    margin-bottom: -90px ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .pc-text h1 {
+    font-size: 35px;
+  }
+  .pc-text p {
+    font-size: 20px;
+  }
+  .kids-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .download-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .download-text {
+    margin-top: 20px;
+    margin-bottom: -90px ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .download-text h1 {
+    font-size: 35px;
+  }
+  .download-text p {
+    font-size: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+}
+}
+@media (max-width: 959px) {
+  .logo img {
+    width: 110px;
+  }
+  .container {
+    margin-top: -3px;
+  }
+  .dropdown {
+    gap: 8px !important;
+  }
+  .area {
+    margin-top: 200px;
+  }
+  .area h1 {
+    font-size: 32px;
+  }
+  .area h3 {
+    font-size: 20px;
+  }
+  .area h4 {
+    font-size: 20px;
+  }
+  .discount img {
+    width: 50%;
+  }
+}
+@media (max-width: 780px) {
+  .container {
+    margin-top: 0px;
+  }
+  .navbar li:nth-child(1) {
+    margin-top: -20px;
+  }
+  .dropdown button {
+    font-size: 0;
+  }
+  .dropdown-menu {
+    padding-top: 22px;
+    padding-bottom: 3px;
+  }
+  .questions {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .faq-container h1 {
+    font-size: 2rem;
+  }
+  .faq-signup {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .faq-signup input {
+    max-width: 70%;
+    padding: 12px 20px;
+  }
+  .faq-signup button {
+    max-width: 90%; 
+    margin-top: 10px; 
+  }
+}
+@media (max-width: 600px) {
+  .email-signup {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .main input {
+    margin: 10px 0;
+  }
+  .discount img {
+    display: none; 
+  }
+}
+@media (max-width: 492px) {
+  .black-container img {
+    height: 300px;
+  }
+  .tv video {
+    top: 10%;
+  }
+  .pc-container img {
+    margin-top: 20px;
+    height: 250px;
+  }
+  .pc video {
+    top: 10%;
+  }
+  .pc-container img {
+    margin-top: 20px;
+    height: 250px;
+  }
+  .pc video {
+    top: 10%;
+  }
+  .kids-container img {
+    margin-top: 20px;
+    height: 250px;
+  }
+}
+@media (max-width: 375px) {
+  .discount {
+    margin: 50px 10px; 
+  }
+  .text {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 195px) {
+  .discount-container {
+    display: none; 
+  }
+}
+
+  
+
+
+
+
+
+
+
+
