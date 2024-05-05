@@ -1,6 +1,5 @@
 body {
   background-color: #0f0f0fe7;
-  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
 }
 /*-------------------navbar section-----------------*/
 .container {
@@ -426,18 +425,19 @@ p.description {
 }
 .questions a {
   color: #b3b3b3;
+  font-size: 15px;
 }
 .footer-container {
   justify-content: flex-start;
 }
 .list li {
-  margin: 10px -30px;
+  margin: 9px -30px;
   list-style-type: none;
 }
 .list li a {
   color: #b3b3b3;
   text-decoration: underline;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
 }
 .dropdown-footer button {
@@ -501,7 +501,8 @@ p.description {
   border: none;
   border-radius: 5px;
   overflow-x: hidden;
-  min-height: 700px;
+  height: 700px;
+  margin-top: 20px;
 }
 #signInModal h3{
   font-size: 2rem;
@@ -565,8 +566,8 @@ p.description {
   font-size: 16px;
 }
 .passwordLink a:hover{
-text-decoration: underline;
-color: rgb(186, 178, 178);
+  text-decoration: underline;
+  color: rgb(186, 178, 178);
 }
 .signFooter {
   margin-top: 100px;
@@ -641,8 +642,6 @@ input.form-check-input:checked[type="checkbox"]:hover {
 #additionalInfo a:hover {
   text-decoration: underline;
 }
-
-
 
 
 @media (max-width: 1300px) {
@@ -846,18 +845,21 @@ input.form-check-input:checked[type="checkbox"]:hover {
   }
 }
 @media (max-width: 375px) {
+  .container {
+    overflow: hidden;
+  }
   .discount {
     margin: 50px 10px; 
   }
   .text {
     margin-top: 150px;
   }
-}
-@media (max-width: 195px) {
-  .discount-container {
+
+  .discount-info p {
     display: none; 
   }
 }
+
 
   
 
