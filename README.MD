@@ -5,3 +5,4 @@ This assignment is about recreating responsive "Netflix" <a href="https://www.ne
 <h4>🔹 Netflix page sample - <a href="https://simonakom.github.io/netflix-page/index.html" style="font-size:small;">View</a><h4>
 
 
+x
