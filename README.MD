@@ -4,3 +4,10 @@ This assignment is about recreating responsive "Netflix" <a href="https://www.ne
 
 <h4>🔹 Netflix page sample - <a href="https://simonakom.github.io/netflix-page/index.html" style="font-size:small;">View</a><h4>
 
+### Desktop version:
+<img src="./pictures/main-page.png" alt="Spotify" style="border-radius: 5px; display: inline-block; width: 700px; height: auto;" />
+<img src="./pictures/signin.png" alt="Spotify" style="border-radius: 5px; display: inline-block; width: 700px; height: auto;" />
+
+### Mobile version:
+<img src="./pictures/responsive.png" alt="Spotify" style="border-radius: 5px; display: inline-block; width: 700px; height: auto;" />
+<img src="./pictures/faq.png" alt="Spotify" style="border-radius: 5px; display: inline-block; width: 700px; height: auto;" />
