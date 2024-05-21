@@ -1,4 +1,4 @@
-# <span><img src="./pictures/icon-netflix.webp" alt=netflix style="height: 1em;"></span> "Netflix" landing page
+# <span><img src="./pictures/icon-netflix.webp" alt=netflix-page style="height: 1em;"></span> "Netflix" landing page
 
 This assignment is about recreating responsive "Netflix" <a href="https://www.netflix.com/es-en/"> landing page</a> design using javascript/bootstrap/css and practising modal window (press "Sign In" button), "hamburger menu" (FAQ section).
 
@@ -9,5 +9,5 @@ This assignment is about recreating responsive "Netflix" <a href="https://www.ne
 <img src="./pictures/signin.png" alt="Spotify" style="border-radius: 5px; display: inline-block; width: 700px; height: auto;" />
 
 ### Mobile version:
-<img src="./pictures/responsive.png" alt="Spotify" style="border-radius: 5px; display: inline-block; width: 700px; height: auto;" />
-<img src="./pictures/faq.png" alt="Spotify" style="border-radius: 5px; display: inline-block; width: 700px; height: auto;" />
+<img src="./pictures/responsive.png" alt="Spotify" width="300" style="border-radius: 5px;" />
+<img src="./pictures/faq.png" alt="Spotify" width="300" style="border-radius: 5px;" />
